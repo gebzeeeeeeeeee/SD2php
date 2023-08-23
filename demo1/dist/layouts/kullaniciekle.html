@@ -8,6 +8,35 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <style>
+   body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px; /* İçerik alanının etrafındaki boşluk */
+        }
+
+        .footer {
+            background-color: #f8f9fa; /* Footer arkaplan rengi */
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between; /* İçeriği yana doğru genişlet */
+            align-items: center; /* Dikey hizalama */
+        }
+
+        .footer-text {
+            color: blue; /* Metin rengi */
+            font-weight: bold; /* Kalın font */
+            margin-left: 30px; /* Sol boşluk */
+            margin-right: 30px; /* Sağ boşluk */
+            text-align: center; /* Metin hizalama */
+        }
+
     .card {
         border: none;
     }
@@ -70,11 +99,11 @@
                                 <label for="profil">Seçilebilir Profil :</label>
                                 <textarea class="form-control" id="profil" cols="20" rows="6"></textarea>
                             </div>
-                            <div class="mb-3"> 
+                            <div class="mb-3">
                                 <label for="profil"> Adres :</label>
                                 <textarea class="form-control" cols="20" rows="6"
-                                
-                                    placeholder="Adres giriniz"></textarea></div>
+                                    placeholder="Adres giriniz"></textarea>
+                            </div>
                             <!-- Other form inputs... -->
                             <button type="submit" class="btn btn-primary">Kullanıcı Ekle</button>
                         </form>
@@ -82,56 +111,68 @@
                 </div>
             </div>
             <div class="col-lg-6 ">
-                <div class="card mb-2 ">
+                <div class="card mb-3 ">
 
 
 
                     <div class="card-body">
                         <div class="mb-3">
-                            <label for="email" class="form-label">E-Posta :</label>
-                            <input type="email" class="form-control" id="email" placeholder="E-posta adresini giriniz">
+                            <label for="unvan">Ünvan :</label>
+                            <input type="text" class="form-control" id="unvan" placeholder="Ünvan giriniz">
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">E-Posta :</label>
-                            <input type="email" class="form-control" id="email" placeholder="E-posta adresini giriniz">
+                            <label for="sifre">Şifre:</label>
+                            <input type="password" class="form-control" id="sifre" placeholder="Şifre giriniz">
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">E-Posta :</label>
-                            <input type="email" class="form-control" id="email" placeholder="E-posta adresini giriniz">
+                            <label for="soyad">Soyad :</label>
+                            <input type="text" class="form-control" id="soyad" placeholder="Soyad giriniz">
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">E-Posta :</label>
-                            <input type="email" class="form-control" id="email" placeholder="E-posta adresini giriniz">
+                        <div class="mt-4 ">
+
+                            <label class="yazıb">Cinsiyet :</label><br>
+                            <input type="radio" id="kadin" name="cinsiyet" value="Kadın">
+                            <label for="kadin">Kadın</label>
+                            <input type="radio" id="erkek" name="cinsiyet" value="Erkek">
+                            <label for="erkek">Erkek</label><br>
+
                         </div>
 
-                        <div class="mb-3">
-                            <label for="email" class="form-label">E-Posta :</label>
-                            <input type="email" class="form-control" id="email" placeholder="E-posta adresini giriniz">
+                        <div class="mt-4 ">
+                            <label class="yazıb">Cinsiyet :</label><br>
+                            <input type="radio" id="kadin2" name="cinsiyet2" value="Kadın">
+                            <label for="kadin2">Kadın</label>
+                            <input type="radio" id="erkek2" name="cinsiyet2" value="Erkek">
+                            <label for="erkek2">Erkek</label><br>
+                        </div>
+                        <div class="mt-md-4 mb-3">
+                            <label for="secilenProfil">Seçilen Profil :</label>
+                            <textarea class="form-control" id="secilenProfil" cols="20" rows="6"></textarea>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">E-Posta :</label>
-                            <input type="email" class="form-control" id="email" placeholder="E-posta adresini giriniz">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">E-Posta :</label>
-                            <input type="email" class="form-control" id="email" placeholder="E-posta adresini giriniz">
+                            <label for="bolum">Bölüm :</label>
+                            <select class="form-control" id="bolum">
+                                <option>İstanbul</option>
+                                <option>Ankara</option>
+                                <option>İzmir</option>
+                            </select>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col">
-                <div class="d-flex justify-content-between">
-                    <h1 class="sol">Gebze Belediyesi</h1>
-                    <h1 class="sag">2023</h1>
-                </div>
-            </div>
+  
+    <footer class="footer mt-4">
+        <div class="footer-logo">
+            <p class="footer-text">Gebze Belediyesi</p>
         </div>
-    </div>
+        <div class="footer-title">
+            <p class="footer-text">Belediyesi</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 
 </html>
