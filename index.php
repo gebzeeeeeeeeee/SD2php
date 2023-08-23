@@ -1,5 +1,5 @@
 <?php
-$hedefSayfa = "/demo1/dist/aside/light.html";
+$hedefSayfa = "/ProjePHP/admin/adminpanel.html";
 
 // Yönlendirme işlemi
 header("Location: $hedefSayfa");
