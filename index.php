@@ -1,5 +1,5 @@
 <?php
-$hedefSayfa = "/demo1/dist/layouts/aside/light.html";
+$hedefSayfa = "/demo1/dist/aside/light.html";
 
 // Yönlendirme işlemi
 header("Location: $hedefSayfa");
