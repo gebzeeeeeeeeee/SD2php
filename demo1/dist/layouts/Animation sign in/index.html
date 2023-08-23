@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stil.css" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet"
+        type="text/css">
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="sign-up">
+            <form action="#">
+                <h1>Hesap Oluştur</h1>
+                <div class="social-container"> <a href="#" class="social"><i class="fab fa-facebook-f"></i></a> <a
+                        href="#" class="social"><i class="fab fa-google-plus-g"></i></a> <a href="#" class="social"><i
+                            class="fab fa-linkedin-in"></i></a> </div>
+                <p>Gerekli alanları doldurunuz.</p> <input type="text" name="txt" placeholder="Ad" required=""> <input
+                    type="email" name="email" placeholder="Email" required=""> <input type="password" name="pswd"
+                    placeholder="Şifre" required=""> <button>Kayıt Ol</button>
+            </form>
+        </div>
+        <div class="sign-in">
+            <form action="#">
+                <h1>Giriş Yap</h1>
+                <div class="social-container"> <a href="#" class="social"><i class="fab fa-facebook-f"></i></a> <a
+                        href="#" class="social"><i class="fab fa-google-plus-g"></i></a> <a href="#" class="social"><i
+                            class="fab fa-linkedin-in"></i></a> </div>
+                <p>Gerekli alanları doldurunuz.</p> <input type="email" name="email" placeholder="Email" required=""> <input
+                    type="password" name="pswd" placeholder="Şifre" required=""> <a href="#">Şifreni mi unuttun?</a>
+                <button>Giriş Yap</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-left">
+                    <h1>Tekrar Hoşgeldiniz!</h1>
+                    <p>Hesabınıza giriş yapmak için butona tıklayınız.</p> <button
+                        id="signIn">Giriş Yap</button>
+                </div>
+                <div class="overlay-right">
+                    <h1>Merhaba!</h1>
+                    <p>Bir hesabınız yoksa butona tıklayarak kayıt oluşturunuz.</p> <button
+                        id="signUp">Kayıt Ol</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const main = document.getElementById('main');
+    signUpButton.addEventListener('click', () => { main.classList.add("right-panel-active"); });
+    signInButton.addEventListener('click', () => { main.classList.remove("right-panel-active"); });
+</script>
