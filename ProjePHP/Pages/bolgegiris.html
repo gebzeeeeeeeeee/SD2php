@@ -9,6 +9,7 @@
 </head>
 <style>
     body {
+             color: #3f4254;
                 margin: 0;
                 padding: 0;
                 display: flex;
@@ -43,7 +44,7 @@
     
         <div class="row">
             <div class="col">
-                <h2 class="mb-3">Bölge Giriş</h2>
+                <h1 class="mb-3">Bölge Giriş</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
@@ -54,17 +55,24 @@
                 </nav>
             </div>
         
-            <div class="container mt-5">
-                <div class="bg-secondary p-4 rounded">
-                    <h5 class="text-white">Yeni Bölge Giriş</h5>
-                    <div class="mb-4">
-                        <h4 class="mt-4">Bölge Kodu</h4>
-                        <input type="text" class="form-control" placeholder="Bölge Kodu Giriniz">
+            <div class="container ">
+                <div style="border: 1px solid rgb(123, 119, 119); border-radius: 5px;">
+                    <div class="bg-primary p-2 rounded-top  " >
+                        <h5 class="text-white pt-1 pl-2 m-1">Yeni Bölge Giriş</h5>
+        
                     </div>
-                    <div class="mb-4">
-                        <h4 class="mt-4">Bölge Adı</h4>
-                        <textarea class="form-control" rows="3" placeholder="Bölge Adını Giriniz"></textarea>
+                    <div class="col-md-6 m-3">
+                        <div class="mb-4">
+                            <h4 class="mt-4">Bölge Kodu</h4>
+                            <input type="text" class="form-control" placeholder="Bölge Kodu Giriniz">
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="mt-4">Bölge Adı</h4>
+                            <textarea class="form-control " style="resize: none;"  rows="3" placeholder="Bölge Adını Giriniz"></textarea>
+                        </div>
+
                     </div>
+                   <div  class="col-md-6 m-3">
                     <h4 class="mt-4">Bölge Aktiflik Durumu</h4>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
@@ -74,7 +82,12 @@
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                         <label class="form-check-label" for="flexRadioDefault2"> Pasif </label>
                     </div>
-                    <button type="button" class="btn btn-primary mt-lg-4">Kaydet</button>
+
+                   </div>
+                    
+                   <div class="d-flex justify-content-lg-start m-2" >
+                    <button type="submit" class="btn" style="background-color: #009ef7; color: rgb(255, 255, 255);">Kaydet</button>
+                </div>
                 </div>
             </div>
         </div>
