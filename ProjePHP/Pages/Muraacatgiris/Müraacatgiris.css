@@ -1,86 +1,82 @@
-body{
+body {
     padding: 30px 70px;
-  color: rgb(16, 14, 14);
+    color: #162c57;
 }
-.anadiv{
+
+.anadiv {
     width: 100%;
     height: auto;
-
 }
-.başlık{
+
+.başlık {
     font-size: x-large;
     width: 100%;
     height: auto;
     margin-top: 35px;
-   
-    
 }
-hr{
+
+hr {
     margin-top: 0px;
     height: 2px;
-   
 }
-.aynıdiv{
+
+.aynıdiv {
     width: 100%;
     height: 50px;
-   display: flex;
-   margin: 10px 0px;
+    display: flex;
+    margin: 10px 0px;
 }
-.ayrac{
+
+.ayrac {
     width: 30px;
     height: 50px;
 }
-.sol{
- 
+
+.sol {
     width: 100%;
     height: 50px;
     float: left;
 }
-.soltext{
- 
+
+.soltext {
     width: 100%;
     height: 150px;
     float: left;
 }
-.sag{
-   
+
+.sag {
     width: 100%;
     height: 50px;
     float: right;
 }
 
-.soluc{
-    
+.soluc {
     width: 100%;
     height: 50px;
     display: flex;
 }
 
-.saguc{
-   
+.saguc {
     width: 100%;
     height: 50px;
     display: flex;
-
 }
-.ortauc{
 
+.ortauc {
     width: 100%;
     height: 50px;
     display: flex;
     margin: auto;
 }
-.ötarih{
- 
-    width:150%;
+
+.ötarih {
+    width: 150%;
     height: 50px;
     float: left;
 }
 
-
 .styled-input {
-    
-color: grey;
+    color: grey;
     margin-top: 10px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -90,17 +86,77 @@ color: grey;
     width: 100%;
 }
 
-
 .submit-button {
-    background-color: blue;
+    background-color: #162c57;
     color: white;
     width: 300px;
     height: 50px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: x-large;
 }
 
 .submit-button:hover {
-    background-color: darkblue;
+    background-color: #1ca9f8;
+    color: #162c57;
+}
+
+
+/*tarih için özel kod vayyyy*/
+
+input[type=date]:invalid+span:after {
+    content: "Yönlendirme Tarihi";
+    margin-left: 20px;
+    color: grey;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+input[type=date]:focus:invalid+span:after {
+    display: none;
+}
+
+
+/*tt2*/
+
+input[type=date]:invalid+.tarih2:after {
+    content: "İtiraz Yönlendirme Tarihi";
+    margin-left: 20px;
+    color: grey;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+input[type=date]:focus:invalid+.tarih2:after {
+    display: none;
+}
+
+
+/*tt3*/
+
+input[type=date]:invalid+.tarih3:after {
+    content: "Doğum Tarihi";
+    margin-left: 20px;
+    color: grey;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+input[type=date]:focus:invalid+.tarih3:after {
+    display: none;
+}
+
+
+/*tterjraetmaz*/
+
+input:not(:focus):invalid {
+    color: transparent;
+}
+
+label.wrapper {
+    position: relative;
 }

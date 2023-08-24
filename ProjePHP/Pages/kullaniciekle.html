@@ -8,45 +8,59 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <style>
-      textarea{
+    textarea {
         resize: none;
     }
-   body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        .content {
-            flex: 1;
-            padding: 20px; /* İçerik alanının etrafındaki boşluk */
-        }
-
-        .footer {
-            background-color: #f8f9fa; /* Footer arkaplan rengi */
-            padding: 10px 0;
-            display: flex;
-            justify-content: space-between; /* İçeriği yana doğru genişlet */
-            align-items: center; /* Dikey hizalama */
-        }
-
-        .footer-text {
-            color: #009ef7; /* Metin rengi */
-            font-weight: bold; /* Kalın font */
-            margin-left: 30px; /* Sol boşluk */
-            margin-right: 30px; /* Sağ boşluk */
-            text-align: center; /* Metin hizalama */
-        }
-
+    
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    .content {
+        flex: 1;
+        padding: 20px;
+        /* İçerik alanının etrafındaki boşluk */
+    }
+    
+    .footer {
+        background-color: #f8f9fa;
+        /* Footer arkaplan rengi */
+        padding-top: 13px;
+        display: flex;
+        justify-content: space-between;
+        /* İçeriği yana doğru genişlet */
+        align-items: center;
+        /* Dikey hizalama */
+    }
+    
+    .footer-text {
+        color: #009ef7;
+        /* Metin rengi */
+        font-weight: bold;
+        /* Kalın font */
+        margin-left: 30px;
+        /* Sol boşluk */
+        margin-right: 30px;
+        /* Sağ boşluk */
+        text-align: center;
+        /* Metin hizalama */
+    }
+    
     .card {
         border: none;
     }
-
+    
     .d {
         border: 2px solid rgb(255, 255, 255);
         border-radius: 5px;
+    }
+    
+    .breadcrumb-item a {
+        text-decoration: none;
     }
 </style>
 
@@ -79,8 +93,7 @@
                         <form>
                             <div class="mb-3">
                                 <label for="email">E-Posta :</label>
-                                <input type="email" class="form-control" id="email"
-                                    placeholder="E-posta adresini giriniz">
+                                <input type="email" class="form-control" id="email" placeholder="E-posta adresini giriniz">
                             </div>
                             <div class="mb-3">
                                 <label for="username"> Ad :</label>
@@ -88,13 +101,11 @@
                             </div>
                             <div class="mb-3">
                                 <label for="sicilNo">Sicil No :</label>
-                                <input type="text" class="form-control" id="sicilNo"
-                                    placeholder="13 haneli sicil no giriniz">
+                                <input type="text" class="form-control" id="sicilNo" placeholder="13 haneli sicil no giriniz">
                             </div>
                             <div class="mb-3">
                                 <label for="telefon">Telefon :</label>
-                                <input type="tel" class="form-control" id="telefon"
-                                    placeholder="Telefon numarası giriniz">
+                                <input type="tel" class="form-control" id="telefon" placeholder="Telefon numarası giriniz">
 
                             </div>
                             <div class="mb-3">
@@ -107,8 +118,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="profil"> Adres :</label>
-                                <textarea class="form-control" cols="20" rows="6"
-                                    placeholder="Adres giriniz"></textarea>
+                                <textarea class="form-control" cols="20" rows="6" placeholder="Adres giriniz"></textarea>
                             </div>
                             <!-- Other form inputs... -->
                             <button type="submit" class="btn" style="background-color: #009ef7; color: rgb(255, 255, 255);">Kullanıcı Ekle</button>
@@ -168,7 +178,7 @@
             </div>
         </div>
     </div>
-  
+
     <footer class="footer mt-4">
         <div class="footer-logo">
             <p class="footer-text">Gebze Belediyesi</p>

@@ -9,39 +9,47 @@
 </head>
 <style>
     body {
-             color: #3f4254;
-                margin: 0;
-                padding: 0;
-                display: flex;
-                flex-direction: column;
-                min-height: 100vh;
-            }
+        color: #3f4254;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
     
-            .content {
-                flex: 1;
-                padding: 20px; /* İçerik alanının etrafındaki boşluk */
-            }
+    .content {
+        flex: 1;
+        padding-bottom: 60px;
+        /* İçerik alanının etrafındaki boşluk */
+    }
     
-            .footer {
-                background-color: #ffffff; /* Footer arkaplan rengi */
-                padding: 10px 0;
-                display: flex;
-                justify-content: space-between; /* İçeriği yana doğru genişlet */
-                align-items: center; /* Dikey hizalama */
-            }
+    .footer {
+        background-color: #f1f4f7;
+        padding-top: 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
     
-            .footer-text {
-                color: blue; /* Metin rengi */
-                font-weight: bold; /* Kalın font */
-                margin-left: 30px; /* Sol boşluk */
-                margin-right: 30px; /* Sağ boşluk */
-                text-align: center; /* Metin hizalama */
-            }
-    </style>
+    .footer-text {
+        color: #009ef7;
+        font-weight: bold;
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: center;
+    }
+    
+    .breadcrumb-item a {
+        text-decoration: none;
+    }
+</style>
 
 <body>
     <div class="container mt-3">
-    
+
         <div class="row">
             <div class="col">
                 <h1 class="mb-3">Bölge Giriş</h1>
@@ -54,12 +62,12 @@
                     </ol>
                 </nav>
             </div>
-        
+
             <div class="container ">
                 <div style="border: 1px solid rgb(123, 119, 119); border-radius: 5px;">
-                    <div class="bg-primary p-2 rounded-top  " >
+                    <div class="bg-primary p-2 rounded-top  ">
                         <h5 class="text-white pt-1 pl-2 m-1">Yeni Bölge Giriş</h5>
-        
+
                     </div>
                     <div class="col-md-6 m-3">
                         <div class="mb-4">
@@ -68,39 +76,40 @@
                         </div>
                         <div class="mb-4">
                             <h4 class="mt-4">Bölge Adı</h4>
-                            <textarea class="form-control " style="resize: none;"  rows="3" placeholder="Bölge Adını Giriniz"></textarea>
+                            <textarea class="form-control " style="resize: none;" rows="3" placeholder="Bölge Adını Giriniz"></textarea>
                         </div>
 
                     </div>
-                   <div  class="col-md-6 m-3">
-                    <h4 class="mt-4">Bölge Aktiflik Durumu</h4>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1"> Aktif </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2"> Pasif </label>
+                    <div class="col-md-6 m-3">
+                        <h4 class="mt-4">Bölge Aktiflik Durumu</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1"> Aktif </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2"> Pasif </label>
+                        </div>
+
                     </div>
 
-                   </div>
-                    
-                   <div class="d-flex justify-content-lg-start m-2" >
-                    <button type="submit" class="btn" style="background-color: #009ef7; color: rgb(255, 255, 255);">Kaydet</button>
-                </div>
+                    <div class="d-flex justify-content-lg-start m-2">
+                        <button type="submit" class="btn" style="background-color: #009ef7; color: rgb(255, 255, 255);">Kaydet</button>
+                    </div>
                 </div>
             </div>
         </div>
-            
+
+    </div>
+    <footer class="footer mt-4">
+        <div class="footer-logo">
+            <p class="footer-text">Gebze Belediyesi</p>
         </div>
-        <footer class="footer mt-4">
-            <div class="footer-logo">
-                <p class="footer-text">Gebze Belediyesi</p>
-            </div>
-            <div class="footer-title">
-                <p class="footer-text">2023</p>
-            </div>
-        </footer>     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="footer-title">
+            <p class="footer-text">2023</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

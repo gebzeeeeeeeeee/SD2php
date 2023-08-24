@@ -6,16 +6,17 @@
 </head>
 <link rel="stylesheet" href="Müraacatgiris.css">
 <style>
-    textarea{
+    textarea {
         resize: none;
     }
 </style>
+
 <body>
     <div class="anadiv">
         <div class="başlık">MÜRACAAT GİRİŞİ </div>
         <hr>
         <div class="aynıdiv">
-            <div class="sol"><input type="text" class="styled-input" placeholder="İsim" ></div>
+            <div class="sol"><input type="text" class="styled-input" placeholder="İsim"></div>
             <div class="ayrac"></div>
             <div class="sag"><input type="text" class="styled-input" placeholder="Soyisim"></div>
         </div>
@@ -82,7 +83,14 @@
 
         </div>
         <div class="aynıdiv">
-            <div class="ötarih"><input type="date" class="styled-input" placeholder="Doğum Tarihi"></div>
+            <div class="ötarih"><label class="wrapper">
+                <input class="styled-input t2"
+                   type="date"
+                    required="required"  
+                            
+                />
+                <span class="tarih3"> </span>
+            </label></div>
             <div class="ayrac"></div>
             <div class="sag">
                 <select name="dersler" class="styled-input">
@@ -159,11 +167,11 @@
         <div class="aynıdiv">
             <div class="sol"><input type="text" class="styled-input" placeholder="E posta"></div>
             <div class="ayrac"></div>
-           
+
             <div class="sag"><input type="text" class="styled-input" placeholder="Adres Tarifi"></div>
         </div>
         <div class="aynıdiv">
-            <div class="soltext"><textarea  class="styled-input" style="height: 150px;">
+            <div class="soltext"><textarea class="styled-input" style="height: 150px;">
 Açıklama
         </textarea></div>
         </div>
@@ -201,15 +209,28 @@ Açıklama
         </div>
         <!-- tarihleri düzelt -->
         <div class="aynıdiv">
-            <div class="sol"><input type="date" class="styled-input" value="YönlendirmeTarihi" ></div>
+            <div class="sol"><label class="wrapper">
+                <input class="styled-input"
+                   type="date"
+                    required="required"            
+                />
+                <span ></span>
+            </label></div>
             <div class="ayrac"></div>
-            <div class="sag"><input type="date" class="styled-input" value="İtiraz Yönlendirme Tarihi"></div>
+            <div class="sag"><label class="wrapper">
+                <input class="styled-input t2"
+                   type="date"
+                    required="required"  
+                            
+                />
+                <span class="tarih2"> </span>
+            </label></div>
         </div>
-<div class="anadiv">
-    <div class="ortauc">
-        <button type="submit" class="submit-button">Gönder</button>
-    </div>
-</div>
+        <div class="anadiv">
+            <div class="ortauc">
+                <button type="submit" class="submit-button">Gönder</button>
+            </div>
+        </div>
 
 
 
